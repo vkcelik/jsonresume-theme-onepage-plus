@@ -13,6 +13,7 @@ See <a href="/resume.pdf" download="">resume.pdf</a> for an example
 Move to the `resume.json` folder and run:
 
 ```
+npm install -g resume-cli
 npm install jsonresume-theme-onepage-updated
 resume serve -t onepage-updated
 ```
@@ -20,10 +21,10 @@ resume serve -t onepage-updated
 ## Developping
 
 ```
-sudo npm install -g resume-cli
+npm install -g resume-cli
 git clone https://github.com/danielrodcaball/jsonresume-theme-onepage-updated.git
 cd jsonresume-theme-onepage-updated
-sudo npm install
+npm install
 resume serve --theme .
 ```
 
