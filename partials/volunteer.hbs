@@ -1,52 +1,36 @@
 {{#if resume.volunteer.length}}
-<section id="volunteer">
-	<h2>Volunteer</h2>
-	{{#each resume.volunteer}}
-	<div class="item">
-		{{#if organization}}
-		<h3 class="company">
-			{{organization}}
-		</h3>
-		{{/if}}
-		<div class="date">
-			{{#if startDate}}
-			<span class="startDate">
-				{{startDate}}
-			</span>
-			{{/if}}
-			{{#if endDate}}
-			<span class="endDate">
-				- {{endDate}}
-			</span>
-			{{else}}
-			<span class="endDate">
-				- Present
-			</span>
-			{{/if}}
-		</div>
-		{{#if position}}
-		<div class="position">
-			{{position}}
-		</div>
-		{{/if}}
-		{{#if website}}
-		<div class="website">
-			<a href="{{website}}">{{website}}</a>
-		</div>
-		{{/if}}
-		{{#if summary}}
-		<div class="summary">
-			<p>{{summary}}</p>
-		</div>
-		{{/if}}
-		{{#if highlights.length}}
-		<ul class="highlights">
-			{{#each highlights}}
-			<li>{{.}}</li>
-			{{/each}}
-		</ul>
-		{{/if}}
+<div class='sectionLine'></div>
+<div id='volunteer' class="sectionBlock">
+	<div class='sectionName'>
+		<span>VOLUNTEERING</span>
 	</div>
-	{{/each}}
-</section>
+	<div class='sectionContent'>
+		{{#each resume.volunteer}}
+		<div class='blockHeader'>
+			<span class='title'>{{#if organization}}{{organization}}{{/if}}{{#if position}} - {{position}}{{/if}}</span>
+			{{#if startDate}}
+			<span class='date'>
+				{{#if startDate}}{{startDate}}{{/if}} &mdash; {{#if endDate}}{{endDate}}{{else}}Present{{/if}}
+			</span>
+			{{/if}}
+			{{#if url}}
+			<div class='url'><a href='{{url}}'>{{url}}</a></div>
+			{{/if}}
+			{{#if summary}}
+			<div class="summary">
+				<p>{{summary}}</p>
+			</div>
+			{{/if}}
+			{{#if highlights.length}}
+			<ul class='highlights'>
+				{{#each highlights}}
+				<li>{{.}}</li>
+				{{/each}}
+			</ul>
+			{{/if}}
+		</div>
+		{{#unless @last}}<div class='separator'></div>{{/unless}}
+		{{/each}}
+	</div>
+</div>
 {{/if}}

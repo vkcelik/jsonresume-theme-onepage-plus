@@ -1,24 +1,22 @@
-{{#if resume.publications.length}}
+{{#if resume.certificates.length}}
 <div class='sectionLine'></div>
-<div id='publications'>
+<div id='certificates'>
 	<div class='sectionName'>
-		<span>PUBLICATIONS</span>
+		<span>CERTIFICATES</span>
 	</div>
 	<div class='sectionContent'>
-		{{#each resume.publications}}
+		{{#each resume.certificates}}
 		<div class='blockHeader'>
 			<span class='title'>
 				{{#if name}}{{name}}{{/if}}
 			</span>
-			{{#if releaseDate}}
+			{{#if issuer}} | <span class="issuer">{{issuer}}</span>{{/if}}
+			{{#if date}}
 			<span class='date'>
-				<span class='releaseDate'>{{formatDate releaseDate}}</span>
+				<span class='date'>{{formatDate date}}</span>
 			</span>
 			{{/if}}
 		</div>
-		{{#if publisher}}
-		<div class="publisher">{{publisher}}</div>
-		{{/if}}
 		{{#if url}}
 		<div class='url'>
 			<a href='{{url}}'>{{url}}</a>

@@ -1,8 +1,11 @@
 {{#if resume.references.length}}
-<section id="references">
-	<h2>References</h2>
-	{{#each resume.references}}
-	<div class="item">
+<div class='sectionLine'></div>
+<div id="references">
+	<div class='sectionName'>
+		<span>REFERENCES</span>
+	</div>
+	<div class="sectionContent">
+		{{#each resume.references}}
 		{{#if reference}}
 		<blockquote class="reference">
 			{{reference}}
@@ -13,7 +16,7 @@
 			— {{name}}
 		</div>
 		{{/if}}
+		{{/each}}
 	</div>
-	{{/each}}
-</section>
+</div>
 {{/if}}

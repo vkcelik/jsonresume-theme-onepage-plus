@@ -1,21 +1,26 @@
 {{#if resume.interests.length}}
-<section id="interests">
-	<h2>Interests</h2>
-	{{#each resume.interests}}
-	<div class="item">
-		{{#if name}}
-		<div class="name">
-			{{name}}
-		</div>
-		{{/if}}
-		{{#if keywords.length}}
-		<ul class="keywords">
-			{{#each keywords}}
-			<li>{{.}}</li>
-			{{/each}}
-		</ul>
-		{{/if}}
+<div class='sectionLine'></div>
+<div id='interests' class="sectionBlock">
+	<div class='sectionName'>
+		<span>INTERESTS</span>
 	</div>
-	{{/each}}
-</section>
+	<div class='sectionContent'>
+		{{#each resume.interests}}
+		<span class='name'>{{name}}</span>
+		<!--
+      {{#if keywords.length}}
+      --><span class='keywords'> <em>[
+				{{#each keywords}}
+				{{.}}
+				<!--
+        -->{{#unless @last}}, {{/unless}}
+				{{/each}}
+				]
+			</em></span>
+		<!--
+      {{/if}}
+      -->{{#unless @last}}<span>, </span>{{/unless}}
+		{{/each}}
+	</div>
+</div>
 {{/if}}

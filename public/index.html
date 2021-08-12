@@ -1,0 +1,489 @@
+<!doctype html>
+<html>
+	<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>Richard Hendrik</title>
+
+	<style>
+	body {
+    background: #EEEEEE;
+    font: 13px "Times New Roman", Times, sans-serif;
+    line-height: 1.4;
+    margin: 40px 0;
+}
+
+em {
+    color: #999;
+}
+
+p {
+    line-height: 1.4;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+li {
+    margin-bottom: 2px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#resume {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 80px 100px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 4px #aaa;
+    -webkit-box-shadow: 2px 2px 4px #aaa;
+}
+
+.coursesList {
+    width: 28%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.largeFont {
+    font-size: 20px;
+}
+
+.smallFont {
+    font-size: 13px;
+}
+
+.sectionBlock {
+    display: flex;
+    width: 100%;
+}
+
+.sectionName {
+    width: 18%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.sectionContent {
+    width: 80%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.sectionContent ul {
+    padding-left: 20px;
+    margin-top: 6px;
+    list-style-type: circle;
+}
+
+.sectionContent .title {
+    font-weight: bold;
+}
+
+.sectionContent .date {
+    float: right;
+}
+
+.sectionContent .separator {
+    height: 14px;
+}
+
+.sectionLine {
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #CFCFCF;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.divider {
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.summary {
+    margin-top: 6px;
+}
+
+.skillBlock {
+    margin-bottom: 4px;
+}
+
+.jobBlock {
+    page-break-inside: avoid;
+}
+
+.description {
+    text-align: justify;
+}
+
+blockquote.reference {
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 40em) {
+    body {
+        margin: 0;
+        font-size: 14px;
+    }
+    #resume {
+        margin: 0 auto;
+        max-width: 600px;
+        padding: 0.5em 1em;
+        border: none;
+    }
+    .sectionBlock {
+        flex-direction: column;
+    }
+    .sectionContent {
+        width: 100%;
+    }
+    .sectionContent .date {
+        padding-right: 2em;
+    }
+    .sectionName {
+        width: auto;
+    }
+    .largeFont {
+        font-size: 20px;
+    }
+    .smallFont {
+        font-size: 14px;
+    }
+}
+
+@media print {
+    body {
+        background: #FFFFFF;
+    }
+    #resume {
+        margin: 0 auto;
+        max-width: 600px;
+        padding: 0px 0px;
+        border: 0px;
+        background: #fff;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+    a {
+        color: black;
+    }
+}
+	</style>
+	
+	</head>
+	<body>
+	
+	<div id="resume">
+		<div id='nameBlock' class='largeFont'>
+			<span class='name'>
+				Richard Hendrik,
+			</span>
+			<span class='label'>Software Developer</span>
+		</div>
+		<div id='basicsBlock' class='smallFont'>
+			<div class='contactBlock'>
+				<span class='email'>rhendriks@mail.com</span>
+				<span class='divider'>|</span>
+				<span class='phone'>(912) 555-4321</span>
+				<span class='divider'>|</span>
+				<span class='address'>
+					San Francisco, California, US
+				</span>
+			</div>
+			<div id='profilesBlock'>
+				<span class='url'>
+					<b>Gitplace:</b> <a href='https://gitplace.com/rhendricks'>https://gitplace.com/rhendricks</a>
+				</span>
+				<span class='divider'>|</span>
+				<span class='url'>
+					<b>LinkedIn:</b> <a href='https://linkedon.com/richardh'>https://linkedon.com/richardh</a>
+				</span>
+				
+			</div>
+		</div>
+		
+		<div class='sectionLine'></div>
+		<div id='summaryBlock' class="sectionBlock">
+			<div class='sectionName'>
+				<span>SUMMARY</span>
+			</div>
+			<div class='sectionContent'>
+				<span>Richard hails from Tulsa (https://en.wikipedia.org/wiki/Tulsa,_Oklahoma). Holds a bachelor&#x27;s degree from the University of Oklahoma and a master&#x27;s degree from Stanford University. (Go Sooners) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a length-limited conversation!</span>
+			</div>
+		</div>
+		<div class='sectionLine'></div>
+		<div id='education' class="sectionBlock">
+			<div class='sectionName'>
+				<span>EDUCATION</span>
+			</div>
+			<div class='sectionContent'>
+				<div class='educationBlock'>
+					<span class='title'>
+						University of Stanford
+					</span>
+					<div class=''>
+						Master  - Computer Science
+					</div>
+				</div>
+				<div class='separator'></div>
+				<div class='educationBlock'>
+					<span class='title'>
+						University of Oklahoma
+					</span>
+					<div class=''>
+						Bachelor  - Information Technology
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class='sectionLine'></div>
+		<div id='skills' class="sectionBlock">
+			<div class='sectionName'>
+				<span>SKILLS</span>
+			</div>
+			<div class='sectionContent'>
+				<div class='skillBlock'>
+					<span class='title'>Languages:</span>
+					<span>Java</span>, 
+					<span>Python</span>, 
+					<span>Javascript</span>, 
+					<span>Rust</span>, 
+					<span>Golang</span>
+				</div>
+				<div class='skillBlock'>
+					<span class='title'>Frameworks:</span>
+					<span>Spring</span>, 
+					<span>Django</span>, 
+					<span>Express</span>
+				</div>
+				<div class='skillBlock'>
+					<span class='title'>Tools:</span>
+					<span>VS Code</span>, 
+					<span>Intellij IDEA</span>
+				</div>
+				<div class='skillBlock'>
+					<span class='title'>Technologies:</span>
+					<span>Docker</span>, 
+					<span>Kubernetes</span>, 
+					<span>AWS</span>
+				</div>
+				<div class='skillBlock'>
+					<span class='title'>Other:</span>
+					<span>Open source</span>, 
+					<span>XP</span>
+				</div>
+			</div>
+		</div>
+		<div class='sectionLine'></div>
+		<div id='workBlock' class="sectionBlock">
+			<div class='sectionName'>
+				<span>EXPERIENCE</span>
+			</div>
+			<div class='sectionContent'>
+				<div class="jobBlock">
+					<div class='blockHeader'>
+						<span class='title'>Facebook</span>
+						 | <span class="position">Principal Software Engineer</span>
+						<span class='date'>
+							Nov 17, 2016 - Present
+						</span>
+					</div>
+					<div><a href='http://facebook.com'>http://facebook.com</a></div>
+					<div class="summary">
+						<p>Facebook is an American social media conglomerate corporation based in Menlo Park, California. It was founded by Mark Zuckerberg, along with his fellow roommates and students at Harvard College, who were Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes, originally as TheFacebook.com—today&#x27;s Facebook, a popular global social networking website</p>
+					</div>
+					<ul class='highlights'>
+						<li>Vitae purus faucibus ornare suspendisse</li>
+						<li>Ut enim blandit volutpat maecenas</li>
+						<li>Volutpat blandit aliquam</li>
+					</ul>
+					<div class='separator'></div>
+				</div>
+				<div class="jobBlock">
+					<div class='blockHeader'>
+						<span class='title'>Google</span>
+						 | <span class="position">Software Engineer Intern</span>
+						<span class='date'>
+							Sep 13, 2009 - Feb 13, 2010
+						</span>
+					</div>
+					<div><a href='http://google.com'>http://google.com</a></div>
+					<div class="summary">
+						<p>Google is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, a search engine, cloud computing, software, and hardware. It is considered one of the Big Five technology companies in the U.S. information technology industry, alongside Amazon, Facebook, Apple, and Microsoft.</p>
+					</div>
+					<ul class='highlights'>
+						<li>Ut pharetra sit amet aliquam id diam</li>
+						<li>Vitae congue eu consequat ac</li>
+						<li>Cursus sit amet dictum sit amet</li>
+					</ul>
+					
+				</div>
+			</div>
+		</div>
+		<div class='sectionLine'></div>
+		<div id='projectsBlock' class="sectionBlock">
+			<div class='sectionName'>
+				<span>PROJECTS</span>
+			</div>
+			<div class='sectionContent'>
+				<div class="projectBlock">
+					<div class='blockHeader'>
+						<span class='title'>
+							Node.js
+						</span>
+						
+						 | <span class="roles">contributor,evangelist</span>
+					</div>
+					<div><a href='https://nodejs.org/'>https://nodejs.org/</a></div>
+					<div class="description">
+						<p>Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that executes JavaScript code outside a web browser.</p>
+					</div>
+					<ul class='highlights'>
+						<li>Commodo elit at imperdiet dui</li>
+						<li>Id volutpat lacus laoreet non</li>
+						<li>Accumsan lacus vel facilisis</li>
+					</ul>
+					<div class='separator'></div>
+				</div>
+				<div class="projectBlock">
+					<div class='blockHeader'>
+						<span class='title'>
+							Deno
+						</span>
+						
+						 | <span class="roles">creator</span>
+					</div>
+					<div><a href='https://deno.land/'>https://deno.land/</a></div>
+					<div class="description">
+						<p>Deno is a runtime for JavaScript and TypeScript that is based on the V8 JavaScript engine and the Rust programming language. It was created by Ryan Dahl, original creator of Node.js, and is focused on productivity. It was announced by Dahl in 2018 during his talk &quot;10 Things I Regret About Node.js&quot;.</p>
+					</div>
+					<ul class='highlights'>
+						<li>Vitae tempus quam pellentesque</li>
+						<li>Dui accumsan sit amet nulla</li>
+						<li>Ultrices vitae auctor eu augue</li>
+						<li>Scelerisque felis imperdiet</li>
+						<li>Pellentesque dignissim enim sit</li>
+					</ul>
+					
+				</div>
+			</div>
+		</div>
+		<div class='sectionLine'></div>
+		<div id='certificates'>
+			<div class='sectionName'>
+				<span>CERTIFICATES</span>
+			</div>
+			<div class='sectionContent'>
+				<div class='blockHeader'>
+					<span class='title'>
+						AWS Certified Solutions
+		
+		 Architect - Professional
+					</span>
+					 | <span class="issuer">Amazon Web Services</span>
+				</div>
+				<div class='url'>
+					<a href='https://www.your-badge.com'>https://www.your-badge.com</a>
+				</div>
+				
+			</div>
+		</div>
+		<div class='sectionLine'></div>
+		<div id='awards' class="sectionBlock">
+			<div class='sectionName'>
+				<span>AWARDS</span>
+			</div>
+			<div class='sectionContent'>
+				<div class='blockHeader'>
+					<span class='title'>
+						Website of the day
+					</span>
+					<span class='date'>
+						<span class='date'>2014</span>
+					</span>
+				</div>
+					<div class="awarder">Awwward</div>
+				<div class="summary">
+					<p>Received for my website domain.com</p>
+				</div>
+				<div class='separator'></div>
+				<div class='blockHeader'>
+					<span class='title'>
+						Java Champion
+					</span>
+					<span class='date'>
+						<span class='date'>2015</span>
+					</span>
+				</div>
+					<div class="awarder">Oracle</div>
+				<div class="summary">
+					<p>Obtained thanks to my contributions 
+		
+		 to the Java community.</p>
+				</div>
+				
+			</div>
+		</div>
+		<div class='sectionLine'></div>
+		<div id='languages' class="sectionBlock">
+			<div class='sectionName'>
+				<span>LANGUAGES</span>
+			</div>
+			<div class='sectionContent'>
+				<span class='language'>English</span>
+				<span class='fluency'><em>(Native)</em></span>
+				<span>,</span>
+				<span class='language'>Russian</span>
+				<span class='fluency'><em>(Professional)</em></span>
+				
+			</div>
+		</div>
+		<div class='sectionLine'></div>
+		<div id='interests' class="sectionBlock">
+			<div class='sectionName'>
+				<span>INTERESTS</span>
+			</div>
+			<div class='sectionContent'>
+				<span class='name'>Pixelart</span>
+				<!--
+		      --><span>, </span>
+				<span class='name'>Open Source</span>
+				<!--
+		      --><span>, </span>
+				<span class='name'>Gardening</span>
+				<!--
+		      --><span>, </span>
+				<span class='name'>Writing</span>
+				<!--
+		      -->
+			</div>
+		</div>
+		<div class='sectionLine'></div>
+		<div id="references">
+			<div class='sectionName'>
+				<span>REFERENCES</span>
+			</div>
+			<div class="sectionContent">
+				<blockquote class="reference">
+					It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company.
+				</blockquote>
+				<div class="name">
+					— Erlich Bachman
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
