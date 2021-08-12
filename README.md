@@ -6,7 +6,7 @@ The project structure was changed based on the boilerplate (https://github.com/j
 
 Added certificates and projects sections and some minor chnages.
 
-See [resume.html](/resume.html) for an example
+See <a href="/resume.pdf" download>resume.pdf</a> for an example
 
 ## Instaling the theme
 
