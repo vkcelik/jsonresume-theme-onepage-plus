@@ -1,14 +1,14 @@
 {
-  "name": "jsonresume-theme-boilerplate",
-  "version": "0.1.2",
-  "description": "Boilerplate theme for JSON Resume",
-  "author": "Mattias Erming",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/erming/jsonresume-theme-boilerplate"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "handlebars": "^2.0.0-alpha.4"
-  }
+    "name": "jsonresume-theme-onepage-updated",
+    "version": "1.0.0",
+    "description": "An update of the onepage theme (a compact theme for JSON Resume, designed for printing).",
+    "author": "Daniel A. Rodríguez Caballero",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/danielrodcaball/jsonresume-theme-onepage-updated"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "handlebars": "^2.0.0-alpha.4"
+    }
 }
