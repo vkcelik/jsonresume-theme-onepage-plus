@@ -10,9 +10,11 @@ See <a href="/resume.pdf" download="">resume.pdf</a> for an example
 
 ## Instaling the theme
 
+Move to the `resume.json` folder and run:
+
 ```
 npm install jsonresume-theme-onepage-updated
-resume export -t onepage-updated resume.html
+resume serve -t onepage-updated
 ```
 
 ## Developping
