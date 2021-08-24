@@ -22,8 +22,8 @@ resume serve -t onepage-updated
 
 ```
 npm install -g resume-cli
-git clone https://github.com/danielrodcaball/jsonresume-theme-onepage-updated.git
-cd jsonresume-theme-onepage-updated
+git clone https://github.com/vkcelik/jsonresume-theme-onepage-plus.git
+cd jsonresume-theme-onepage-plus
 npm install
 resume serve --theme .
 ```
