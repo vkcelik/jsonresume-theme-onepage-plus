@@ -1,4 +1,4 @@
-# jsonresume-theme-onepage-updated
+# jsonresume-theme-onepage-plus
 
 This theme is basically an update of the onepage theme (https://github.com/ainsleyc/jsonresume-theme-onepage) to work with version 1.0.0 of [JSON Resume](http://jsonresume.org/) specifications.
 
@@ -18,7 +18,7 @@ npm install jsonresume-theme-onepage-updated
 resume serve -t onepage-updated
 ```
 
-## Developping
+## Developing
 
 ```
 npm install -g resume-cli
