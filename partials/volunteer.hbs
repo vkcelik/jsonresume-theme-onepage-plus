@@ -7,7 +7,7 @@
 	<div class='sectionContent'>
 		{{#each resume.volunteer}}
 		<div class='blockHeader'>
-			<span class='title'>{{#if organization}}{{organization}}{{/if}}{{#if position}} - {{position}}{{/if}}</span>
+			<span class='title'>{{#if position}}{{position}}{{/if}}</span>{{#if organization}} | {{organization}}{{/if}}
 			{{#if startDate}}
 			<span class='date'>
 				{{#if startDate}}{{startDate}}{{/if}} &mdash; {{#if endDate}}{{endDate}}{{else}}Present{{/if}}
