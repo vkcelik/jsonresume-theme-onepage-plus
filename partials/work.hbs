@@ -12,11 +12,13 @@
 				{{#if position}} | <span class="position">{{position}}</span>{{/if}}
 				{{#if startDate}}
 				<span class='date'>
-					{{#if startDate}}{{startDate}}{{/if}} &mdash; {{#if endDate}}{{endDate}}{{else}}Present{{/if}}
+					{{formatDate startDate}}{{#if endDate}} &mdash; {{formatDate endDate}}{{else}}{{#if current}} &mdash; Present{{/if}}{{/if}}
 				</span>
 				{{/if}}
 			</div>
+			{{#if url}}
 			<div><a href='{{url}}'>{{url}}</a></div>
+			{{/if}}
 			{{#if summary}}
 			<div class="summary">
 				<p>{{summary}}</p>

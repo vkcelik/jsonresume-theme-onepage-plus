@@ -16,14 +16,11 @@
 		<span class='divider'>|</span>
 		<span class='phone'>{{phone}}</span>
 		{{/if}}
-		{{#if url}}
-		<span class='divider'>|</span>
-		<span class='url'>{{url}}</span>
-		{{/if}}
 		{{#location}}
-		<div class='address'>
+		<span class='divider'>|</span>
+		<span class='address'>
 			{{#if city}}{{city}}{{/if}}{{#if region}}, {{region}}{{/if}}{{#if countryCode}}, {{countryCode}}{{/if}}
-		</div>
+		</span>
 		{{/location}}
 	</div>
 	{{#if profiles.length}}

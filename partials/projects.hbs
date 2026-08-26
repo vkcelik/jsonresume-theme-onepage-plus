@@ -15,11 +15,13 @@
 				{{#if roles.length}} | <span class="roles">{{#each roles}}{{.}}{{#unless @last}}, {{/unless}}{{/each}}</span>{{/if}}
 				{{#if startDate}}
 				<span class='date'>
-					{{#if startDate}}{{startDate}}{{/if}} &mdash; {{#if endDate}}{{endDate}}{{else}}Present{{/if}}
+					{{formatDate startDate}}{{#if endDate}} &mdash; {{formatDate endDate}}{{else}}{{#if current}} &mdash; Present{{/if}}{{/if}}
 				</span>
 				{{/if}}
 			</div>
+			{{#if url}}
 			<div><a href='{{url}}'>{{url}}</a></div>
+			{{/if}}
 			{{#if description}}
 			<div class="description">
 				<p>{{description}}</p>
