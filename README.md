@@ -1,22 +1,60 @@
 # jsonresume-theme-onepage-plus
 
-This theme is basically an update of the onepage theme (https://github.com/ainsleyc/jsonresume-theme-onepage) to work with version 1.0.0 of [JSON Resume](http://jsonresume.org/) specifications.
+An updated version of the compact [onepage theme](https://github.com/ainsleyc/jsonresume-theme-onepage) for the [JSON Resume](https://jsonresume.org/) 1.0.0 schema.
 
-The project structure was changed based on the boilerplate (https://github.com/jsonresume/jsonresume-theme-boilerplate).
+The project structure is based on the [JSON Resume theme boilerplate](https://github.com/jsonresume/jsonresume-theme-boilerplate). This theme adds support for certificates and projects, and keeps the layout focused on a concise printable resume.
 
-Added certificates and projects sections and some minor chnages.
+## Preview
 
-See <a href="/resume.pdf" download="">resume.pdf</a> for an example
+See [resume.pdf](https://github.com/vkcelik/jsonresume-theme-onepage-plus/blob/master/resume.pdf) for an example output.
 
-## Instaling the theme
+## Installing
 
-Move to the `resume.json` folder and run:
+From the directory that contains your `resume.json`, install the theme and serve it with `resume-cli`:
 
 ```
 npm install -g resume-cli
-npm install jsonresume-theme-onepage-updated
-resume serve -t onepage-updated
+npm install jsonresume-theme-onepage-plus
+resume serve --theme onepage-plus
 ```
+
+To export a PDF:
+
+```
+resume export resume.pdf --theme onepage-plus
+```
+
+## Supported Sections
+
+The theme renders these JSON Resume sections when present:
+
+```
+basics
+work
+skills
+certificates
+projects
+languages
+education
+publications
+awards
+volunteer
+interests
+references
+```
+
+## Theme-Specific Fields
+
+In addition to standard JSON Resume fields, the theme recognizes these optional fields:
+
+```
+current
+projects[].urlLabel
+skills[].details[].text
+skills[].details[].comment
+```
+
+Use `current: true` with dated work, education, project, or volunteer entries to display `Present` when `endDate` is omitted.
 
 ## Developing
 
@@ -28,8 +66,17 @@ npm install
 resume serve --theme .
 ```
 
-See also [boilerplate project](https://github.com/jsonresume/jsonresume-theme-boilerplate) and [original project](https://github.com/ainsleyc/jsonresume-theme-onepage)
+## Releasing
+
+Update `package.json`, commit the change, create a version tag with a `v` prefix, and publish:
+
+```
+git tag vX.Y.Z
+npm publish
+```
+
+See also the [boilerplate project](https://github.com/jsonresume/jsonresume-theme-boilerplate) and the [original project](https://github.com/ainsleyc/jsonresume-theme-onepage).
 
 ## License
 
-Available under [the MIT license](http://mths.be/mit).
+Available under the [MIT license](LICENSE).
