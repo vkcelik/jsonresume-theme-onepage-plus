@@ -55,13 +55,13 @@ a {
 }
 
 .sectionName {
-    width: 18%;
+    width: 15%;
     vertical-align: top;
     display: inline-block;
 }
 
 .sectionContent {
-    width: 80%;
+    width: 84%;
     vertical-align: top;
     display: inline-block;
 }
@@ -154,19 +154,28 @@ blockquote.reference {
 }
 
 @media print {
+    @page {
+        size: A4;
+        margin: 8mm;
+    }
+
     body {
         background: #FFFFFF;
+        margin: 0;
     }
+
     #resume {
-        margin: 0 auto;
-        max-width: 600px;
-        padding: 0px 0px;
-        border: 0px;
+        margin: 0;
+        max-width: none;
+        width: auto;
+        padding: 0;
+        border: 0;
         background: #fff;
         box-shadow: none;
         -webkit-box-shadow: none;
     }
     a {
-        color: black;
+        color: #0645ad;
+        text-decoration: underline;
     }
 }

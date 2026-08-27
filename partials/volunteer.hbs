@@ -10,7 +10,7 @@
 			<span class='title'>{{#if position}}{{position}}{{/if}}</span>{{#if organization}} | {{organization}}{{/if}}
 			{{#if startDate}}
 			<span class='date'>
-				{{#if startDate}}{{startDate}}{{/if}} &mdash; {{#if endDate}}{{endDate}}{{else}}Present{{/if}}
+				{{formatDate startDate}}{{#if endDate}} &mdash; {{formatDate endDate}}{{else}}{{#if current}} &mdash; Present{{/if}}{{/if}}
 			</span>
 			{{/if}}
 			{{#if url}}

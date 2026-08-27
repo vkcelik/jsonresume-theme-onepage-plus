@@ -19,13 +19,16 @@
 				</span>
 				{{/if}}
 			</div>
-			{{#if url}}
-			<div><a href='{{url}}'>{{url}}</a></div>
-			{{/if}}
 			{{#if description}}
 			<div class="description">
-				<p>{{description}}</p>
+				<p>{{description}}{{#if url}} <a href='{{url}}'>{{#if urlLabel}}{{urlLabel}}{{else}}link{{/if}}</a>{{/if}}</p>
 			</div>
+			{{else}}
+			{{#if url}}
+			<div class="description">
+				<p><a href='{{url}}'>{{#if urlLabel}}{{urlLabel}}{{else}}link{{/if}}</a></p>
+			</div>
+			{{/if}}
 			{{/if}}
 			{{#if highlights.length}}
 			<ul class='highlights'>

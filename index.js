@@ -16,7 +16,6 @@ Handlebars.registerHelper('formatDate', function(dateString) {
         return new Date(dateString).toLocaleDateString('en', {
             month: 'short',
             year: 'numeric',
-            day: 'numeric',
         });
 
     if (dateStrArr[0] && dateStrArr[1])
@@ -52,5 +51,17 @@ function render(resume) {
 }
 
 module.exports = {
-    render: render
+    render: render,
+    pdfRenderOptions: {
+        format: 'A4',
+        mediaType: 'print',
+        preferCSSPageSize: true,
+        printBackground: true,
+        margin: {
+            top: '0',
+            right: '0',
+            bottom: '0',
+            left: '0'
+        }
+    }
 };
